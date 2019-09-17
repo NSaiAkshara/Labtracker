@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<!--Bootstrap CDN lnk-->
+
+<!--Angular1.x CDN lnk-->
+
+<script src="controller/externalJsFiles/angular.js"></script>
+
+
+<script src="controller/externalJsFiles/angular-route.js"></script>
+
+
+
+
+
+<!-- add external JS files -->
+<script src= "controller/d3.js"></script>
+<script src="controller/MainController.js"></script>
+<script src="controller/LabTrackerIOController.js"></script>
+	
+<!-- <script src="controller/TrainingController.js"></script> -->
+
+
+<!--css files-->
+<link rel="stylesheet" href="view/css/index.css">
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport">
+<title>Labtracker</title>
+<link rel="stylesheet"
+	href="controller/externalJsFiles/bootstrap.min.css"
+	crossorigin="anonymous">
+<link rel="stylesheet"
+	href="controller/externalJsFiles/bootstrap-theme.min.css"
+	crossorigin="anonymous">
+<script src="controller/externalJsFiles/jquery.min.js"></script>
+<script src="controller/externalJsFiles/bootstrap.min.js"
+	crossorigin="anonymous"></script>
+
+
+
+<!-- report generation -->
+<script src="controller/externalJsFiles/angular-sanitize.js"></script>
+
+<script src="controller/externalJsFiles/ng-csv.js"></script>
+<!-- notification messages -->
+<link rel="stylesheet"
+	href="controller/externalJsFiles/snackbar.css"
+	crossorigin="anonymous">
+
+</head>
+<body ng-app="MainModule" id="body">
+	<nav id="myNavbar"
+		class="navbar navbar-default navbar-inverse navbar-fixed-top"
+		role="navigation">
+
+		<div>
+			<div class="navbar-header">
+			
+				<a class=" active navbar-brand" href="#labtracker">LABTRACKER 
+					</a>
+			</div>			
+		</div>
+	</nav>
+
+	<div class="container">
+		<ng-view></ng-view>
+
+
+	</div>
+
+
+	
+</body>
+</html>

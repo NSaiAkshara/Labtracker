@@ -1,0 +1,131 @@
+html, body {
+  height: 100%; /*Fixes the height to 100% of the viewport*/
+}
+body {
+  padding-top: 60px; /*50px for the height of the navbar + 37px for the offset*/
+  padding-bottom: 0px; /*50px for the height of the bottom navbar*/
+}
+.navbar-offset {
+    top: 37px; /*Offsets the top navbar 37px from the top of the viewport*/
+}
+.container-fluid.scrollable {
+  height: 100%; /*Sets the scrollable area to 100% of the viewport*/
+  overflow: auto; /*Allows the scrollable area to have a scrollbar based on the height of its content*/
+  background:#FFA500;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 1px;
+    text-align: right;
+    float: right;
+      /* position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center; */
+}
+
+/* updated css */
+
+#dashboard, #dataentry, #reportdate{
+	float: left;
+	margin-right: 30px;
+}
+body
+{
+    counter-reset: Serial; 
+            /* Set the Serial counter to 0 */
+}
+
+table
+{
+    border-collapse: separate;
+}
+
+#state_budget_table tr td:first-child:before
+{
+  counter-increment: Serial;      /* Increment the Serial counter */
+  content: counter(Serial); /* Display the counter */
+}
+#body
+{
+background-color: #0080ff;
+}
+.chartcontent{
+   
+    padding: 6px 12px;
+    border: 1px solid #80ffff;
+    border-top: none;
+}
+#navbarCollapse{
+		  background-color: #00ffff;
+		  color:#00ffff
+	
+}
+.navbar-header{
+	  background-color: #FFA500;
+	
+}
+.amount_released{
+	display: none;
+}
+.amount_spent{
+	display: none;
+}
+#currentpending_graph,#tatgraph
+{
+	display:none;
+}
+.toolTip {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: absolute;
+    display: none;
+    width: auto;
+    height: auto;
+    background: none repeat scroll 0 0 white;
+    border: 0 none;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: -3px 3px 15px #888888;
+    color: #400040;
+    font: 12px sans-serif;
+    padding: 5px;
+    text-align: center;
+}
+
+.axis path {
+    fill: none;
+    stroke: #777;
+    shape-rendering: crispEdges;
+}
+.axis text {
+    font-family: Lato;
+    font-size: 13px;
+}
+#panelheading,.panel-heading
+{
+			  background-color: #0080c0;
+}
+.lab_button
+{
+				  background-color: #804040;
+				  color:#fff
+}
+.line {
+  fill: none;
+  stroke-width: 3px;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.hover-line {
+  stroke: #B74779;
+  stroke-width: 2px;
+  stroke-dasharray: 3,3;
+}

@@ -1,0 +1,157 @@
+
+<div class="container" style="width: 100%" id="total_body">
+	<div class="container" style="margin-top: 0px; width: 100%"></div>
+	<div class="row">
+		<form name="Form_1" class="form-horizontal" role="form" novalidate>
+			<div class="panel panel-default">
+				<div id="panelheading" class="panel-heading">
+					<button class ="lab_button" id="throughput_button">THROUGHPUT</button>
+					           <button class ="lab_button" id="currentpending_button">CURRENT PENDING</button>
+					           					           <button class ="lab_button" id="tat_button" ng_model="all">TURN AROUND TIMEE</button>
+					           
+  </div>
+  </div>
+				
+				<div id="currentpending_graph">
+						<div class="panel panel-default" >
+						<div class="panel-body">
+								<div class="form-group">
+<label class="col-sm-2 control-label no-padding-left"
+>Date</label>
+<div class="col-sm-4" >
+<span class="block input-icon input-icon-right">
+<input type="date"   class="form-control" value=""  name="Q_Date" ng-model="date" ng-change="barchart_func_cp() " placeholder="DD-MM-YYYY" required focus/>   
+                          
+                            </span>
+                            
+</div>
+
+
+</div>
+</div>
+</div>
+<div class="panel panel-default" >
+								<div class="panel-body">
+									<div class="form-group" style="width: 100%; height: auto; overflow-x: scroll;">
+											<svg id="svg_cp" width="900" height="700"></svg>
+											<style>
+												svg rect
+												{
+												fill:grey;
+												}
+												svg text
+												{
+												fill:black;
+												}
+										 </style>
+								   </div>
+							   </div>
+						</div>
+					
+											</div>
+				<div id="tat_graph" >
+				
+						<div class="panel panel-default" >
+								<div class="panel-body">
+								<div class="form-group">
+<label class="col-sm-2 control-label no-padding-left"
+>Start Date</label>
+<div class="col-sm-4" >
+<span class="block input-icon input-icon-right">
+<input type="date"   class="form-control" value=""  name="Q_Date" ng-model="start_date_tat" ng-disabled="all" ng-change="disable()" placeholder="DD-MM-YYYY" required focus/>   
+                          
+                            </span>
+                            
+</div>
+ 
+<label class="col-sm-2 control-label no-padding-left"
+>End Date</label>
+<div class="col-sm-4" >
+<span class="block input-icon input-icon-right">
+<input type="date"   class="form-control" value=""  name="Q_Date"  ng-change="barchart_func_tat()"   ng-model="end_date_tat" placeholder="DD-MM-YYYY" required focus/>                             
+                            </span>
+</div>
+</div>
+</div>
+</div>
+<div class="panel panel-default" >
+								<div class="panel-body">
+								<div id="barchart" class="chartcontent">
+									<div class="form-group" style="width: 100%; height: auto; overflow-x: scroll;">
+											<svg id="svg_tat" width="900" height="700"></svg>
+											<style>
+												svg rect
+												{
+												fill:grey;
+												}
+												svg text
+												{
+												fill:black;
+												}
+										 </style>
+								   </div>
+							   
+						
+					</div>
+											</div>
+				</div>
+				</div>
+				<div id="throughput_graph">
+<div class="panel panel-default" >
+								<div class="panel-body">
+		<div class="form-group">
+<label class="col-sm-2 control-label no-padding-left"
+>Start Date</label>
+<div class="col-sm-4" >
+<span class="block input-icon input-icon-right">
+<input type="date"   class="form-control" value=""  name="Q_Date" ng-model="start_date" required focus/>                             
+                            </span>
+</div>
+ 
+<label class="col-sm-2 control-label no-padding-left"
+>End Date</label>
+<div class="col-sm-4" >
+<span class="block input-icon input-icon-right">
+<input type="date"   class="form-control" value=""  name="Q_Date" ng-model="end_date" required focus/>                             
+                            </span>
+</div>
+<div><br><br><br></div>
+                       <label class="col-sm-4 control-label no-padding-right" 
+                      >No.of days to merge</label> 
+                       <div class="col-sm-5">
+                           <span class="block input-icon input-icon-right">
+                                <input type="number" class="form-control" name="merging_Days" ng-change="barchart_func3()" ng-model="mergingDays" required focus/>
+                            </span>
+                       </div>
+
+  </div>
+</div>
+</div>
+					
+						<div class="panel panel-default" >
+								<div class="panel-body">
+									<div class="form-group" style="width: 100%; height: auto; overflow-x: scroll;">
+											<svg id="svg" width="3000" height="700"></svg>
+											<style>
+												svg rect
+												{
+												fill:grey;
+												}
+												svg text
+												{
+												fill:black;
+												}
+										 </style>
+								   </div>
+							   </div>
+						</div>
+					
+					
+					
+        </div>
+   </div>
+   					
+   
+</form>
+</div>
+</div>
